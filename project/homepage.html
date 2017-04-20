@@ -1,0 +1,236 @@
+<!doctype HTML>
+<html> 
+<head>
+<title>this ies web </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href=" homepage.css" />
+
+</head>
+	<body>   
+
+		<a name="top"></a>
+
+
+	<div class="wrapper"> 
+		<div class="header">
+		
+		<!-- image Begin -->
+	<img src="images/bizzzz.png" />
+		  <!-- image End -->
+
+			<div class="mainmenu">
+			<ul> 
+				<li><a href="homepage.html">Home</a></li>
+				<li><a href="aboutpage.html">About</a></li>
+				<li><a href="contactpage.html">Contact</a></li>	
+			</ul>
+			</div>
+	</div>
+
+			
+			 <!-- #region Jssor Slider Begin -->
+    <script src="js/jssor.slider-23.1.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:1200,$Opacity:2}
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 960);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*responsive code end*/
+        };
+    </script>
+    <style>
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 12 css */
+        /*
+        .jssora12l                  (normal)
+        .jssora12r                  (normal)
+        .jssora12l:hover            (normal mouseover)
+        .jssora12r:hover            (normal mouseover)
+        .jssora12l.jssora12ldn      (mousedown)
+        .jssora12r.jssora12rdn      (mousedown)
+        */
+        .jssora12l, .jssora12r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 30px;
+            height: 46px;
+            cursor: pointer;
+            background: url('img/a12.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora12l { background-position: -16px -37px; }
+        .jssora12r { background-position: -75px -37px; }
+        .jssora12l:hover { background-position: -136px -37px; }
+        .jssora12r:hover { background-position: -195px -37px; }
+        .jssora12l.jssora12ldn { background-position: -256px -37px; }
+        .jssora12r.jssora12rdn { background-position: -315px -37px; }
+    </style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:900px;height:300px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:900px;height:300px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="img/02.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/04.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/05.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="img/09.jpg" />
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2"></span>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();</script>
+    <!-- #endregion Jssor Slider End -->
+			
+			<div class="maincontent">
+				<div class="content-brief">
+					<h1>BizzCode</h1>
+					<p>Bizzcode is software development company.They provide all types of software development services such as Desktop Application services, Mobile Application services, Web Development services with the help of open source technologies. They also provide other value added services such as Logo Design, Search Engine Optimization, Social marketing, Data Entry, Content Writing. Theyensure that all their clients are rewarded with positively identifiable return on investments made on all the services that They provide. Their Developers always stay updated with latest technologies in order to developed software more reliable, robust and secure.One thing that is unique of them is that They deliver software within strict deadlines according to the requirement and within the budget of the client. They always use latest technologies available with the intention of including as much functionality as possible so that the developed software's minimize resources required such as time and human effort. Customer satisfaction is their prime goal..</p>
+				</div><br>
+				<div class="content-service">
+				<h1>SERVICES</h1>
+				
+				<div class="service-top">
+				<div class="content-games">
+					<h2>2D Games</h2> <p>They offer the best services when it comes to making 2D games with ample expertise in making kids and educational</p></div>
+				<div class="content-web">
+				<h2>Web Application</h2><p>They develop highly functional websites, including E-commerce, CRM. Helping you turn your dreams into reality.</p>	</div> <br />
+				
+				<div class="content-mbapps">
+				<h2>Mobile Application</h2><p>They provide high quality mobile apps too that will bring higher efficiency and relevance for their client’s business.</p></div></div><br />
+
+				<div class="service-bottom">
+				<div class="content-webdesign">
+				<h2>Web Design</h2><p>Revamp and re-design your existing website to add an all new dimension at the most competitive rates in the market.</p>
+				</div><br />
+				
+				<div class="content-domain">
+				<h2>Domains Sales</h2><p>Domain market is the perfect place to buy the right domain name to your business.They are ready to help you to get the best domain name you want.Either Buy or Sell</p></div><br />
+				
+				<div class="content-marketing">
+				<h2>Digital Marketing </h2><p>Digital marketing programs usually center on efforts to create content that attracts attention and encourages readers to share it with their social networks.</p>
+				</div></div>
+			<div id="footer-top" class="wrapper">
+				<div class="footer-top-body">
+					<div class="footer-top-content">
+					<h1>Products</h1>
+						<ul class="footer-ul">
+							<li><a href="#">Web design</a></li>
+							<li><a href="#">Domain sales</a></li>
+							<li><a href="#">2D Games</a></li>
+						</ul>
+					</div>
+					<div class="footer-top-content">
+					<h1>About</h1>
+						<ul class="footer-ul">
+							<li><a href="#">Jobs</a></li>
+							<li><a href="#">Press</a></li>
+							<li><a href="#">Contacts</a></li>
+						</ul>
+					</div>
+					
+					
+						
+				</div>
+			</div>
+			
+			<div id="footer-bottom">
+				<div class="wrapper">
+					<div class="footer-bottom-left">
+			
+			  <h2>&copy; All Rights Reserved by BizzCode-2017.</h2>
+			</div>
+			<div class="footer-bottom-right">
+				<ul class="footer-bottom-ul">
+					<li><a href="#"><img src="images/footer-skype.png" alt="img" height="30" width="30" /></a></li>
+					<li><a href="#"><img src="images/footer-fb.png" alt="img" height="30" width="30" /></a></li>
+					<li><a href="#"><img src="images/twiiter-linkedin.png" alt="img" height="30" width="30" /></a></li>
+					<li><a href="#"><img src="images/footer-twitter.png" alt="img" height="30" width="30" /></a></li>
+				</ul>
+			</div>
+			<a href="#top">
+		<button style="background: cornflowerblue;padding: 8px;margin:22px -33px 14px 249px;">back to top</button>
+		</a>
+		</div>
+		
+	</div>
+	</div>
+</body>
+
+
+</html>

@@ -1,0 +1,93 @@
+.wrapper{width:900px; margin:0 auto; background:rgba(221, 221, 221, 0.05);}
+.body{background:rgba(221, 221, 221, 0.05);}
+.header{_background:blue;width:100%; height:0px; }
+
+/*.header img{width:100%; height:100px;}*/
+.mainmenu{background:rgba(156, 39, 176, 0.6);text-align:right;}
+.mainmenu ul{margin:0; padding:0; list-style:none;     margin-top: -45px;}
+.mainmenu ul li{display:inline-block}
+.mainmenu ul li a{color:#fff;padding:15px; display:inline-block;text-decoration:none}
+.mainmenu ul li a:hover{background:#000}
+.maincontent{overflow:hidden;padding:15px; background: hsla(270, 50%, 40%, 0.37)}
+.content-service{width:100%;height:100%;background:rgba(0, 255, 243, 0.6);padding:15px; }
+.content-service h1{text-align:center;margin-left: -41px; }
+.content-brief{width:100%;background:rgb(0, 202, 212);;height:300px;padding:15px;}
+.content-brief h1{text-align:center;}
+.content-games{    background:rgba(79, 224, 232, 0.95);height: 200px;width: 250px;float:left;    padding: 10px; margin: 6px;}
+.content-games h2{ text-align:center;   }
+.content-web {background:rgba(79, 224, 232, 0.95);height: 200px;width: 250px;float:left;    padding: 10px;margin: 6px;margin-left:10px;}
+.content-web h2{text-align:center;}
+.content-mbapps{background: rgba(79, 224, 232, 0.95);height: 200px;width: 250px;float:left;padding: 10px; margin-left: 10px; margin-top: -11px}
+.content-mbapps h2{text-align:center;}
+.content-webdesign{background: rgba(79, 224, 232, 0.95);height: 200px;width: 250px;float:left;padding: 10px; margin-left:10px;margin-top:-41px;}
+.content-webdesign h2{text-align:center;}
+.content-domain{background: rgba(79, 224, 232, 0.95);height: 200px;width: 250px;float:left; padding: 10px;margin-left:10px;margin-top:-60px;}
+.content-domain h2{text-align:center;}
+.content-marketing{background:rgba(79, 224, 232, 0.95);height: 200px;width: 250px;float:left; padding: 10px;margin-left:10px;margin-top:-78px;}
+.content-marketing h2{text-align:center;}
+.service-top{background:rgba(79, 224, 232, 0.95);    height: 243px;}
+.service-bottom{background:rgba(79, 224, 232, 0.95);    height: 235px;}
+.header {
+	clear: both;
+	margin-bottom: 40px;
+}
+.header img {}
+
+
+.footer{width:100%;background:black; color:#fff; padding:15px; text-align:left;}
+
+
+/*about start*/
+.team{text-align:center;background:rgba(173, 34, 34, 0.28);margin-bottom:0px;height:45px;}
+.content-about{width: 100%;border-bottom: 1px groove #ddd;background:rgba(255, 141, 0, 0.03);}
+.content-about h1 {text-align: center;}
+.content1{width: 435px;height:500px;background:rgba(173, 34, 34, 0.28);float:left;}
+.content1 img{width: 384px;height: 270px;display: block; margin: auto;}
+.content1 p{padding:10px;}
+.content2 p{padding:10px;}
+.content2 img{    width: 384px;height: 270px;display: block; margin: auto;}
+.content2{width:435px;height:500px;background:rgba(173, 34, 34, 0.28);float:right;}
+/*.sidebar h1{text-align:center;}*/
+/*contact start*/
+.content-contact{background:rgba(221, 221, 221, 0.66);width:100%;height:200px; margin: auto;}
+.content-contact img{padding-left:100px;}
+.content-contact h1 {text-align: center;}
+.content-contact p1 {float:right; padding-left:20px;}
+.content-contact p1 { padding-left:20px;}
+.content-map{width:100%;background:pink;    height: 360px;}
+.content-map h1 {text-align: center;}
+.content-form{width:100%;background:rgba(99, 25, 217, 0.05);}
+.content-form h1{text-align: center;}
+.footer-contact{width: 930px;background:black; color:#fff; padding:15px; text-align:center;}
+.phone, .Email{float:left; width:50%; text-align: center; }
+.phone img{ height:40px; width:40px; }
+.Email img{height:40px; width:40px;}
+/*footer*/
+#footer-top{background-color:rgba(0, 153, 204, 0.18);clear:both;width:100%;height:205px;text-align:center;}
+
+.footer-top-body{    background: rgba(0, 188, 212, 0);
+    margin: auto;
+    width: 869px;
+    height: 177px;
+    border-bottom: 1px solid #ddd;
+    padding-top: 25px;}
+.footer-top-content{color:black;float:left;width:25%;background:rgba(0, 153, 204, 0);margin-left:101px;;}
+.footer-top-content h1{font-size:25px;margin:15px 0px;    padding-left: 66px;}
+.footer-top-content .footer-ul{display:block;    margin-left: 73px;}
+.footer-top-content .footer-ul li{line-height: 27px;}
+.footer-top-content .footer-ul li a{text-decoration: none;color:black;letter-spacing:1.3px;font-size: 14px;font-variant: normal;}
+.footer-top-content .footer-ul li a:hover{text-decoration: none;}
+
+
+
+#footer-bottom{clear: both;width: 100%;height: 100px;background:rgba(0, 0, 0, 0.55);
+}
+.footer-bottom-left{ float:left;text-align:left;}
+.footer-bottom-left h2{_background:black;width:100%; color:rgb(12, 12, 12);padding-top:25px;margin-bottom:10px;font-size:14px;}
+.footer-bottom-right{float:right;text-align:right;}
+.footer-bottom-right .footer-bottom-ul{list-style:none;padding-top:9px;    padding-right: 40px;}
+.footer-bottom-right .footer-bottom-ul li{display:inline-block;background:#fff;padding:2px;border-radius:3px; outline:none;}
+.footer-bottom-right .footer-bottom-ul li a{display:block;}
+.footer-bottom-right .footer-bottom-ul li a:hover{background:#00AAFA; }
+
+
